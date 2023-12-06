@@ -8,7 +8,7 @@ void pointerWrapper::print(void)
 pointerWrapper::pointerWrapper(int _p)
 {
 	cout << "Allocating memory for int pointer" << endl;
-	p = &_p;
+	p = make_unique<int>(_p);
 }
 
 pointerWrapper::~pointerWrapper()

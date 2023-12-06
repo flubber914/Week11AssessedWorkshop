@@ -7,7 +7,7 @@ class pointerWrapper
 public:
 	void print(void);
 private:
-	int* p;
+	unique_ptr<int> p;
 public:
 
 	pointerWrapper(int _p);
